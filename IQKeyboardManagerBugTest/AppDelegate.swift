@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		IQKeyboardManager.shared().isEnabled = false
+		IQKeyboardManager.shared().isEnableAutoToolbar = false
+		IQKeyboardManager.shared().keyboardDistanceFromTextField = 2
+		IQKeyboardManager.shared().enabledDistanceHandlingClasses.add(ViewController.self)
+		
 		return true
 	}
 
