@@ -6,5 +6,5 @@ target 'IQKeyboardManagerBugTest' do
   use_frameworks!
 
   # Pods for IQKeyboardManagerBugTest
-  pod 'IQKeyboardManager'
+  pod 'IQKeyboardManager', '6.1.1'
 end
